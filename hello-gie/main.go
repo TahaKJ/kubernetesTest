@@ -45,7 +45,13 @@ func main() {
 func hello(w http.ResponseWriter, r *http.Request) {
 	log.Printf("Serving request: %s", r.URL.Path)
 	host, _ := os.Hostname()
-	fmt.Fprintf(w, "Hello, world!\n")
+	p, err := loadPage(title)
+	fmt.Fprintf(w, "Hello, GIE!\n")
+	fmt.Fprintf(w, "<h1>Editing %s</h1>"+
+        "<form action=\"/save/%s\" method=\"POST\">"+
+        "<textarea name=\"body\">%s</textarea><br>"+
+        "<input type=\"submit\" value=\"Save\">"+
+        "</form>", p.Title, p.Title, p.Body)
 	fmt.Fprintf(w, "Version: 1.0.0\n")
 	fmt.Fprintf(w, "Hostname: %s\n", host)
 }
