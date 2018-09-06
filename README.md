@@ -1,7 +1,8 @@
-# kubernetesTest
+# kuberneTest
 personalised responses for kubernetes demo
 containes 
-* a modified guestbook to a private chatroom using :
- 1 redis pod for backend, 1 nginx pod for frontend
-* hello world main.go personalised
+* a modified guestbook to private chatroom for iris using :
+ 1 redis pod for backend, 1 alpine pod for frontend
+ 
+* hello world main.go personalised for gie
 * NGINX server pointing to a specified html
