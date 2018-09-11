@@ -45,6 +45,6 @@ func main() {
 func hello(w http.ResponseWriter, r *http.Request) {
 	log.Printf("Serving request: %s", r.URL.Path)
 	host, _ := os.Hostname()
-	fmt.Fprintf(w, "<html><head><title>Error</title></head><body>U GIE IRIS</body></html>")
+	fmt.Fprintf(w, "<html><head><title>U CLOUD</title></head><body>U GIE IRIS</body></html>")
 }
 // [END all]
