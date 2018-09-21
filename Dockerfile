@@ -1,3 +1,3 @@
 FROM kyma/docker-nginx
-COPY /home/mta4917/site/ /var/www
+COPY home.html/ /var/www
 CMD 'nginx'
