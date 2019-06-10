@@ -1,6 +1,6 @@
 # kuberneTest
-personalised responses for kubernetes demo
-containes 
+Based on official Kubernetes demo , this is personalised responses for kubernetes demo
+containes :
 * a modified guestbook to private chatroom for iris using :
  1 redis pod for backend, 1 alpine pod for frontend
  
